@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setur-Portfolio</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+    <h1 class="logo">Jonah</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+        <section class="hero">
+    <div class="hero-image">
+        <img src="./assets/jonah.png" alt="Jonah Image">
+    </div>
+    <aside>
+        <h1>Hi, I'm <span>Jonah</span></h1>
+        <p> Full Stack Developer | Building Scalable Web Solutions</p>
+        <div class="hero-buttons">
+            <a href="#project" class="primary">View my work</a>
+            <button class="secondary" id="hireBtn">Hire Me</button>
+        </div>
+    </aside>
+</section>
+
+        <section class="about" id="about">
+    <div class="trial"></div>
+    <aside>
+        <h2>About Me</h2>
+        <p>
+            I’m a <b>Full Stack Web Developer</b> with hands-on experience in building dynamic, 
+            data-driven applications. I enjoy problem-solving, creating clean designs, 
+            and leveraging technology to improve user experiences.
+        </p>
+
+        <div class="details">
+            <p><b>Quick Details:</b></p>
+            <ul>
+                <li>Nairobi, Kenya</li>
+                <li>BSc Computer Science, University of Kabianga</li>
+                <li><a href="https://github.com/Setur413" target="_blank">Portfolio & GitHub</a></li>
+            </ul>
+        </div>
+
+        <a href="./assets/cv.pdf" download class="cv-btn">Download CV</a>
+
+    </aside>
+</section>
+
+        <section class="projects" id="project">
+          <h1>My Projects</h1>  
+  <!-- Mobile Apps -->
+  <h2> Mobile Apps</h2>
+  <div class="mobile">
+    <div class="cards">                    
+      <img src="./assets/attendance.webp" alt="Attendify App">
+      <h3>Attendify</h3>
+      <p>Flutter + Firebase app for QR-based classroom attendance and real-time tracking.</p>
+      <a href="https://github.com/Setur413/AUTOMATED_ATTENDANCE" target="_blank">Learn more</a>
+    </div>
+
+    <div class="cards">                    
+      <img src="./assets/download.jpeg" alt="CrimeReport App">
+      <h3>CrimeReport</h3>
+      <p>Android app enabling citizens to report crimes to authorities.</p>
+      <a href="https://github.com/Setur413/Crimeport-App" target="_blank">Learn more</a>
+    </div>
+
+    <div class="cards">                    
+      <img src="./assets/wallet.jpeg" alt="Wallet App">
+      <h3>Wallet App</h3>
+      <p>Flutter + Firebase wallet app for tracking and managing transactions.</p>
+      <a href="https://github.com/Setur413/Wallet-APP" target="_blank">Learn More</a>
+    </div>
+  </div> 
+
+  <!-- Web Dev -->
+  <h2>Web & Other Projects</h2>
+  <div class="webdev">
+    <div class="cards">                    
+      <img src="./assets/portfolio.png" alt="Portfolio Website">
+      <h3>Portfolio</h3>
+      <p>A responsive portfolio website showcasing my skills and projects.</p>
+      <a href="https://github.com/Setur413/" target="_blank">Learn more</a>
+    </div>
+
+    <div class="cards">                    
+      <img src="./assets/analysis.jpeg" alt="Data Analysis Project">
+      <h3>Data Analysis</h3>
+      <p>A mini project focused on learning Python-based data analysis techniques.</p>
+      <a href="https://github.com/Setur413/Data-Analysis" target="_blank">Learn more</a>
+    </div>
+
+    <div class="cards">                    
+      <img src="./assets/rest-api.png" alt="REST API Project">
+      <h3>REST API</h3>
+      <p>A simple REST API project built for practice with backend development.</p>
+      <a href="https://github.com/Setur413/Rest-API-" target="_blank">Learn more</a>
+    </div>
+
+    <div class="cards">                    
+      <img src="./assets/crypto.jpeg" alt="Crypto Chatbot Project">
+      <h3>Crypto Chatbot</h3>
+      <p>A chatbot agent project providing cryptocurrency updates and interaction.</p>
+      <a href="https://github.com/Setur413/Crypto-currency-chatbot" target="_blank">Learn more</a>
+    </div>
+  </div>
+        </section>
+
+        
+<section class="skills" id="skills">
+    <h1 class="skills-title">Skills</h1>
+    <div class="skill-card">
+        <h4>Frontend</h4>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Flutter</li>
+            <li>Tailwind</li>
+        </ul>
+    </div>
+    <div class="skill-card">
+        <h4>Backend</h4>
+        <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST API</li>
+        </ul>
+    </div>
+    <div class="skill-card">
+        <h4>Databases</h4>
+        <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+        </ul>
+    </div>
+    <div class="skill-card">
+        <h4>Tools</h4>
+        <ul>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>Agile Workflow</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+        </ul>
+    </div>
+</section>
+
+        <section class="contact" id="contact">
+            <h2 class="center">
+                Contact Me
+            </h2>
+            <button id="OpenModal">contact</button>
+            <div id="modal">
+                <p>Let's get in touch! Send a message</p>
+            <form action="" id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="fname" placeholder="Your name" required>
+                <label for="no">Phone no</label>
+                <input type="tel" id="no" placeholder="0712345678" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <label for="subj">Subject</label>
+                <input type="text" id="subj" placeholder="Your subject" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Your message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="status"></p>
+            <button id="closemodal">Close</button>
+            </div>
+            
+        </section>
+        <footer>
+    <div class="portfolio">
+        <h2>Portfolio</h2>
+        <p>&copy; 2025 Jonah Tarus. Made with <i class="fa-solid fa-heart" style="color:red;"></i></p>
+    </div>
+
+    <div class="links">
+        <h2>Quick Links</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div class="mycontact">
+        <h2>Contact</h2>
+        <p><i class="fa-solid fa-envelope"></i> 
+           <a href="mailto:jkipsetur@gmail.com?subject=Portfolio Inquiry&body=Hello Jonah,">jkipsetur@gmail.com</a>
+        </p>
+        <p><i class="fa-solid fa-phone"></i> 
+           <a href="tel:+254724492630">+254 724 492630</a>
+        </p>
+    </div>
+
+    <div class="social">
+        <h2>Follow Me</h2>
+        <div class="social-links">
+            <a href="https://wa.me/+254724492630"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/in/yourprofile"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
