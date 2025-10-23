@@ -29,5 +29,4 @@ The site is fully responsive and includes a simple backend for handling **contac
 
 ---
 
-## 📁 Project Structure
 
