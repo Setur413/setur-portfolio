@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonah Setur | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #111827;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #4F46E5;
+    }
+    nav a {
+      margin-left: 20px;
+      font-weight: 600;
+      color: #111827;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #4F46E5;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(to right, #eef2ff, #ffffff);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #374151;
+    }
+    .hero a.button {
+      padding: 12px 28px;
+      background-color: #4F46E5;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .hero a.button:hover {
+      background-color: #3730a3;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #4F46E5;
+    }
+    .about p {
+      max-width: 700px;
+      color: #374151;
+      margin-bottom: 30px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skill {
+      background-color: #eef2ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      color: #4F46E5;
+      font-size: 0.9rem;
+    }
+    .projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #4F46E5;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card .project-content {
+      padding: 20px;
+    }
+    .project-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      color: #4b5563;
+    }
+    .project-card .tech {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #4F46E5;
+      margin-bottom: 15px;
+    }
+    .project-card a {
+      margin-right: 10px;
+      font-weight: 600;
+      color: #4F46E5;
+      transition: 0.3s;
+    }
+    .project-card a:hover {
+      color: #3730a3;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #4F46E5;
+    }
+    .contact p {
+      margin-bottom: 20px;
+      color: #374151;
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.3rem;
+      color: #4F46E5;
+      transition: 0.3s;
+    }
+    .social-links a:hover {
+      color: #3730a3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      color: #6b7280;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .about h2, .projects h2, .contact h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Jonah Setur</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Full-Stack Developer & Web App Creator</h2>
+    <p>Building clean, modern, and responsive web applications with a focus on usability and performance. I create projects that make an impact and showcase my skills in JavaScript, React, and modern web technologies.</p>
+    <a href="#projects" class="button">View My Work</a>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Jonah Setur, a passionate web developer from Kenya. I specialize in building responsive and interactive web applications using modern technologies like React, JavaScript, and Netlify. I love turning ideas into real-world projects.</p>
+    <div class="skills">
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">Netlify</span>
+      <span class="skill">Git/GitHub</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://i.ibb.co/vk7gYJ9/safecommunity.png" alt="SafeCommunity Screenshot">
+        <div class="project-content">
+          <h3>SafeCommunity</h3>
+          <p>A community safety app that allows users to report incidents, access alerts, and stay informed about safety updates in their area.</p>
+          <div class="tech">React | JavaScript | CSS | Netlify</div>
+          <a href="https://safecommunity.netlify.app/" target="_blank">View Live</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://i.ibb.co/3vG8x0P/attendify.png" alt="Attendify Screenshot">
+        <div class="project-content">
+          <h3>Attendify</h3>
+          <p>An attendance tracking app for students and lecturers with QR code scanning, course registration, and attendance management features.</p>
+          <div class="tech">React | JavaScript | CSS | Netlify</div>
+          <a href="https://attendify-attendance.netlify.app/" target="_blank">View Live</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="https://i.ibb.co/pK7cQHp/jsetur-shop.png" alt="JSetur Shop Screenshot">
+        <div class="project-content">
+          <h3>JSetur Shop</h3>
+          <p>A modern e-commerce website showcasing products, allowing customers to browse, and purchase items seamlessly online.</p>
+          <div class="tech">HTML | CSS | JavaScript | Netlify</div>
+          <a href="https://jsetur-shop.netlify.app/" target="_blank">View Live</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations, freelance projects, or just to say hi!</p>
+    <div class="social-links">
+      <a href="https://github.com/Setur413" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/jonah-setur" target="_blank">LinkedIn</a>
+      <a href="mailto:seturjonah@example.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Jonah Setur. All rights reserved.
+  </footer>
+
+</body>
+</html>

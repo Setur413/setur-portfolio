@@ -3,227 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setur-Portfolio</title>
-    <link rel="stylesheet" href="css\index.css">
+    <title>Jonah Tarus - Full Stack Developer</title>
+    <!-- Simple Emoji Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <header>
-    <h1 class="logo">Jonah</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+            <h1 class="logo">JT</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
 
-        <section class="hero">
-    <div class="hero-image">
-        <img src="./assets/jonah.png" alt="Jonah Image">
-    </div>
-    <aside>
-        <h1>Hi, I'm <span>Jonah</span></h1>
-        <p> Full Stack Developer | Building Scalable Web Solutions</p>
-        <div class="hero-buttons">
-            <a href="#project" class="primary">View my work</a>
-            <button class="secondary" id="hireBtn">Hire Me</button>
-        </div>
-    </aside>
-</section>
-
-        <section class="about" id="about">
-    <div class="trial"></div>
-    <aside>
-        <h2>About Me</h2>
-        <p>
-            I’m a <b>Full Stack Web Developer</b> with hands-on experience in building dynamic, 
-            data-driven applications. I enjoy problem-solving, creating clean designs, 
-            and leveraging technology to improve user experiences.
-        </p>
-
-        <div class="details">
-            <p><b>Quick Details:</b></p>
-            <ul>
-                <li>Nairobi, Kenya</li>
-                <li>BSc Computer Science, University of Kabianga</li>
-                <li><a href="https://github.com/Setur413" target="_blank">Portfolio & GitHub</a></li>
-            </ul>
-        </div>
-
-        <a href="./assets/cv.pdf" download class="cv-btn">Download CV</a>
-
-    </aside>
-</section>
-
-        <section class="projects" id="project">
-          <h1>My Projects</h1>  
-  <!-- Mobile Apps -->
-  <h2> Mobile Apps</h2>
-  <div class="mobile">
-    <div class="cards">                    
-      <img src="./assets/attendance.webp" alt="Attendify App">
-      <h3>Attendify</h3>
-      <p>Flutter + Firebase app for QR-based classroom attendance and real-time tracking.</p>
-      <a href="https://github.com/Setur413/AUTOMATED_ATTENDANCE" target="_blank">Learn more</a>
-    </div>
-
-    <div class="cards">                    
-      <img src="./assets/download.jpeg" alt="CrimeReport App">
-      <h3>CrimeReport</h3>
-      <p>Android app enabling citizens to report crimes to authorities.</p>
-      <a href="https://github.com/Setur413/Crimeport-App" target="_blank">Learn more</a>
-    </div>
-
-    <div class="cards">                    
-      <img src="./assets/wallet.jpeg" alt="Wallet App">
-      <h3>Wallet App</h3>
-      <p>Flutter + Firebase wallet app for tracking and managing transactions.</p>
-      <a href="https://github.com/Setur413/Wallet-APP" target="_blank">Learn More</a>
-    </div>
-  </div> 
-
-  <!-- Web Dev -->
-  <h2>Web & Other Projects</h2>
-  <div class="webdev">
-    <div class="cards">                    
-      <img src="./assets/portfolio.png" alt="Portfolio Website">
-      <h3>Portfolio</h3>
-      <p>A responsive portfolio website showcasing my skills and projects.</p>
-      <a href="https://github.com/Setur413/" target="_blank">Learn more</a>
-    </div>
-
-    <div class="cards">                    
-      <img src="./assets/analysis.jpeg" alt="Data Analysis Project">
-      <h3>Data Analysis</h3>
-      <p>A mini project focused on learning Python-based data analysis techniques.</p>
-      <a href="https://github.com/Setur413/Data-Analysis" target="_blank">Learn more</a>
-    </div>
-
-    <div class="cards">                    
-      <img src="./assets/rest-api.png" alt="REST API Project">
-      <h3>REST API</h3>
-      <p>A simple REST API project built for practice with backend development.</p>
-      <a href="https://github.com/Setur413/Rest-API-" target="_blank">Learn more</a>
-    </div>
-
-    <div class="cards">                    
-      <img src="./assets/crypto.jpeg" alt="Crypto Chatbot Project">
-      <h3>Crypto Chatbot</h3>
-      <p>A chatbot agent project providing cryptocurrency updates and interaction.</p>
-      <a href="https://github.com/Setur413/Crypto-currency-chatbot" target="_blank">Learn more</a>
-    </div>
-  </div>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Jonah Tarus</span></h1>
+                    <h2>Full Stack Developer</h2>
+                    <p>Building scalable web solutions with modern technologies</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <button class="btn btn-secondary" id="hireBtn">
+                            <span>Hire Me</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./assets/jonah.png" alt="Jonah Tarus">
+                        <div class="floating-elements">
+                            <div class="floating-element element-1"><i class="fab fa-js"></i></div>
+                            <div class="floating-element element-2"><i class="fab fa-react"></i></div>
+                            <div class="floating-element element-3"><i class="fab fa-node-js"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </section>
 
-        
-<section class="skills" id="skills">
-    <h1 class="skills-title">Skills</h1>
-    <div class="skill-card">
-        <h4>Frontend</h4>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Flutter</li>
-            <li>Tailwind</li>
-        </ul>
-    </div>
-    <div class="skill-card">
-        <h4>Backend</h4>
-        <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>REST API</li>
-        </ul>
-    </div>
-    <div class="skill-card">
-        <h4>Databases</h4>
-        <ul>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Firebase</li>
-        </ul>
-    </div>
-    <div class="skill-card">
-        <h4>Tools</h4>
-        <ul>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>Postman</li>
-            <li>Agile Workflow</li>
-            <li>Heroku</li>
-            <li>Netlify</li>
-        </ul>
-    </div>
-</section>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./assets/jonah.png" alt="Jonah Tarus">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="intro">
+                        I'm a passionate <span class="highlight">Full Stack Web Developer</span> with hands-on experience in building dynamic, data-driven applications. I enjoy problem-solving, creating clean designs, and leveraging technology to improve user experiences.
+                    </p>
+                    
+                    <div class="details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>BSc Computer Science, University of Kabianga</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>Portfolio</strong>
+                                <a href="https://github.com/Setur413" target="_blank">GitHub Profile</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <section class="contact" id="contact">
-            <h2 class="center">
-                Contact Me
-            </h2>
-            <button id="OpenModal">contact</button>
-            <div id="modal">
-                <p>Let's get in touch! Send a message</p>
-            <form action="" id="contactForm">
-                <label for="name">Full Name</label>
-                <input type="text" id="fname" placeholder="Your name" required>
-                <label for="no">Phone no</label>
-                <input type="tel" id="no" placeholder="0712345678" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@gmail.com" required>
-                <label for="subj">Subject</label>
-                <input type="text" id="subj" placeholder="Your subject" required>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" placeholder="Your message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <p id="status"></p>
-            <button id="closemodal">Close</button>
+                    <a href="./assets/cv.pdf" download class="btn btn-primary cv-btn">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Flutter</span>
+                        <span class="skill-item">Tailwind</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">REST API</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">Firebase</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">Agile Workflow</span>
+                        <span class="skill-item">Heroku</span>
+                        <span class="skill-item">Netlify</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="section-line"></div>
             </div>
             
+            <!-- Mobile Apps -->
+            <div class="projects-category">
+                <h3 class="category-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    Mobile Applications
+                </h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/attendance.webp" alt="Attendify App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Setur413/AUTOMATED_ATTENDANCE" target="_blank" class="project-link">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                    <a href="https://attendify-attendance.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Attendify</h4>
+                            <p>Flutter + Firebase app for QR-based classroom attendance and real-time tracking.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>QR Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/download.jpeg" alt="CrimeReport App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Setur413/criminals-report-App" target="_blank" class="project-link">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                    <a href="https://safecommunity.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>CrimeReport</h4>
+                            <p>Android app enabling citizens to report crimes to authorities.</p>
+                            <div class="project-tech">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="projects-category">
+                <h3 class="category-title">
+                    <i class="fas fa-globe"></i>
+                    Web & Other Projects
+                </h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/portfolio.png" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Setur413/setur-portfolio" target="_blank" class="project-link">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                    <a href="https://setur-portfolio.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Portfolio Website</h4>
+                            <p>A responsive portfolio website showcasing my skills and projects.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/rest-api.png" alt="REST API Project">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Setur413/Rest-API-" target="_blank" class="project-link">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>REST API</h4>
+                            <p>A simple REST API project built for practice with backend development.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/seturshop.png" alt="Jsetur Shop">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Setur413/ecommerce" target="_blank" class="project-link">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                    <a href="https://jsetur-shop.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Jsetur Shop</h4>
+                            <p>Buy your clothes and accessories at Jsetur shop at a discounted price.</p>
+                            <div class="project-tech">
+                                <span>E-commerce</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and challenges. Feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:jkipsetur@gmail.com">jkipsetur@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+254724492630">+254 724 492630</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/+254724492630" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Setur413" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="fname" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subj" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="status" class="status-message"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer>
-    <div class="portfolio">
-        <h2>Portfolio</h2>
-        <p>&copy; 2025 Jonah Tarus. Made with <i class="fa-solid fa-heart" style="color:red;"></i></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jonah Tarus</h3>
+                    <p>Full Stack Developer passionate about creating innovative web solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/Setur413" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/+254724492630" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jonah Tarus. Made with <i class="fas fa-heart" style="color: #ff4757;"></i></p>
+            </div>
+        </footer>
     </div>
 
-    <div class="links">
-        <h2>Quick Links</h2>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-    <div class="mycontact">
-        <h2>Contact</h2>
-        <p><i class="fa-solid fa-envelope"></i> 
-           <a href="mailto:jkipsetur@gmail.com?subject=Portfolio Inquiry&body=Hello Jonah,">jkipsetur@gmail.com</a>
-        </p>
-        <p><i class="fa-solid fa-phone"></i> 
-           <a href="tel:+254724492630">+254 724 492630</a>
-        </p>
-    </div>
-
-    <div class="social">
-        <h2>Follow Me</h2>
-        <div class="social-links">
-            <a href="https://wa.me/+254724492630"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://linkedin.com/in/yourprofile"><i class="fa-brands fa-linkedin"></i></a>  
-            <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-    </div>
-</footer>
-
-    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>
